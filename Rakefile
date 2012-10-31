@@ -1,5 +1,12 @@
 task :default => :test
 
+$:.unshift File.dirname(__FILE__) + 'lib'
+
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new
+task :default => :spec
+
+
 desc "Run ./bin/rat.rb "
 task :ejecutar do
   sh "ruby -Ilib bin/rat.rb"
