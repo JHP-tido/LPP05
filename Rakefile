@@ -1,10 +1,8 @@
-task :default => :test
-
 $:.unshift File.dirname(__FILE__) + 'lib'
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new
-task :default => :rspec
+task :default => :spec
 
 
 desc "Run ./bin/rat.rb "
@@ -25,6 +23,6 @@ sh "ruby -w -Ilib test/tc_rat.rb --name #{test_name}"
 end
 
 desc "Run Rspec"
-task :rspec do
+task :specman do
 sh "rspec -Ilib test/rspec_rat.rb"
 end
