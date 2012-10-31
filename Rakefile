@@ -24,5 +24,5 @@ end
 
 desc "Run Rspec"
 task :specman do
-sh "rspec -Ilib test/rspec_rat.rb"
+sh "rspec -Ilib spec/rspec_rat.rb"
 end
