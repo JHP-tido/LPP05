@@ -12,9 +12,9 @@ def denom()
 @b
 end
 
-def mostrar
-@a/@b
-end
+#def mostrar
+#@a/@b
+#end
 
 def numerador
 9
@@ -24,8 +24,8 @@ def denominador
 9
 end
 
-def reduc
-9,9
-end
+#def reduc
+#9,9
+#end
 
 end
