@@ -40,7 +40,7 @@ it "Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el nu
 end
 
 it "Se debe mostar por la consola la fraccion en formato flotante" do
-@ratnum.flot().should be_kin_of (Float)
+@ratnum.flot().should be_kind_of (Float)
 end
 
 it "Se debe comparar si dos fracciones son iguales con ==" do 
@@ -65,16 +65,16 @@ it "Se debe calcular el opuesto de una fraccion con -" do
 end
 
 it "Se debe sumar dos fracciones con + y dar el resultado de forma reducida" do
-@ratnum3=Ratnum.new(2,4)
-@ratnum4=Ratnum.new(2,4)
-@ratnum5=Ratnum.new(1,2)
-(@ratnum3 + @ratnum4).should == @ratnum5
+@ratnum1=Ratnum.new(7,3)
+@ratnum2=Ratnum.new(2,3)
+@ratnum3=Ratnum.new(3,1)
+(@ratnum1 + @ratnum2).should == @ratnum3
 end
 
 it "Se debe restar dos fracciones con - y dar el resultado de forma reducida" do
 @ratnum1=Ratnum.new(4,5)
-@ratnum2=Ratnum.new(2,2)
-@ratnum3=Ratnum.new(2,3)
+@ratnum2=Ratnum.new(3,5)
+@ratnum3=Ratnum.new(1,5)
 (@ratnum1 - @ratnum2).should == @ratnum3
 end
 
